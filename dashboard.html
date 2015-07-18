@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" ng-app="RDash">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>码上跑</title>
+    <link rel="stylesheet" type="text/css" href="css/mine-dashboard.css">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="lib/css/main-dashboard.min.css"/>
+    <!-- SCRIPTS -->
+    <script src="lib/js/main-dashboard.min.js"></script>
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="js/dashboard.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.all.js"> </script>
+    <style>
+        .validation-valid {
+            color: #0074D9;
+        }
+
+        .validation-invalid {
+            color: #FF4136;
+        }
+    </style>
+</head>
+<body ng-controller="MasterCtrl">
+<div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar">
+            <li class="sidebar-main">
+                <a ng-click="toggleSidebar()">
+                    我的
+                    <span class="menu-icon glyphicon glyphicon-transfer"></span>
+                </a>
+            </li>
+            <li class="sidebar-list">
+                <a ui-sref="index">控制台 <span class="menu-icon fa fa-tachometer"></span></a>
+            </li>
+            <li class="sidebar-title"><span>个人中心</span></li>
+            <li class="sidebar-list">
+                <a href="dashboard.html#/user/{{user.userid}}/info">我的资料 <span class="menu-icon fa fa-code"></span></a>
+            </li>
+            <li class="sidebar-list">
+                <a ui-sref="mycode">我的微教程 <span class="menu-icon fa fa-code"></span></a>
+            </li>
+            <li class="sidebar-list">
+                <a ui-sref="myimage">我的镜像 <span class="menu-icon fa fa-tasks"></span></a>
+            </li>
+            <li class="sidebar-title"><span>热门仓</span></li>
+            <li class="sidebar-list">
+                <a ui-sref="codehub" class="fa fa-fire">微教程 <span class="menu-icon fa fa-flag"></span></a>
+            </li>
+            <li class="sidebar-list">
+                <a ui-sref="imagehub" class="fa fa-fire">镜像热 <span class="menu-icon fa fa-truck"></span></a>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <div class="col-xs-4">
+                <a href="https://github.com/rdash/rdash-angular" target="_blank">
+                    首页
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="https://github.com/rdash/rdash-angular/README.md" target="_blank">
+                    关于我们
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#">
+                    帮助文档
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Sidebar -->
+
+    <div id="content-wrapper">
+        <div class="page-content">
+
+            <!-- Header Bar -->
+            <div class="row header">
+                <div class="col-xs-12">
+                    <div class="user pull-right">
+                        <div class="item dropdown">
+                            <a href="#" class="dropdown-toggle">
+                                <img src="{{user_pic}}">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li class="dropdown-header">
+                                    {{user.name}}
+                                </li>
+                                <li class="divider"></li>
+                                <li class="link">
+                                    <a href="/dashboard.html">
+                                        个人中心
+                                    </a>
+                                </li>
+                                <!--<li class="link">-->
+                                    <!--<a href="#">-->
+                                        <!--我的资料-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <li class="divider"></li>
+                                <li class="link">
+                                    <a href="#" ng-click="logout()">
+                                        退出登陆
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item dropdown">
+                            <a href="#" class="dropdown-toggle">
+                                <i class="fa fa-bell-o"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li class="dropdown-header">
+                                    通知
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">你的镜像被xx fork啦!</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="meta">
+                        <div class="page">
+                            控制台
+                        </div>
+                        <div class="breadcrumb-links">
+                            <a href="/">Home</a> / <a href="dashboard.html"> Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Bar -->
+
+            <!-- Main Content -->
+            <div ui-view></div>
+
+        </div><!-- End Page Content -->
+    </div><!-- End Content Wrapper -->
+</div><!-- End Page Wrapper -->
+</body>
+</html>

@@ -1,0 +1,225 @@
+.bubblingG {
+  text-align: center;
+  width: 80px;
+  height: 50px;
+}
+.bubblingG span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  margin: 25px auto;
+  background: #113D87;
+  -moz-border-radius: 50px;
+  -moz-animation: bubblingG 1.3s infinite alternate;
+  -webkit-border-radius: 50px;
+  -webkit-animation: bubblingG 1.3s infinite alternate;
+  -ms-border-radius: 50px;
+  -ms-animation: bubblingG 1.3s infinite alternate;
+  -o-border-radius: 50px;
+  -o-animation: bubblingG 1.3s infinite alternate;
+  border-radius: 50px;
+  animation: bubblingG 1.3s infinite alternate;
+}
+#bubblingG_1 {
+  -moz-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+}
+#bubblingG_2 {
+  -moz-animation-delay: 0.39s;
+  -webkit-animation-delay: 0.39s;
+  -ms-animation-delay: 0.39s;
+  -o-animation-delay: 0.39s;
+  animation-delay: 0.39s;
+}
+#bubblingG_3 {
+  -moz-animation-delay: 0.78s;
+  -webkit-animation-delay: 0.78s;
+  -ms-animation-delay: 0.78s;
+  -o-animation-delay: 0.78s;
+  animation-delay: 0.78s;
+}
+@-moz-keyframes bubblingG {
+  0% {
+    width: 10px;
+    height: 10px;
+    background-color: #113D87;
+    -moz-transform: translateY(0);
+  }
+  100% {
+    width: 24px;
+    height: 24px;
+    background-color: #FFFFFF;
+    -moz-transform: translateY(-21px);
+  }
+}
+@-webkit-keyframes bubblingG {
+  0% {
+    width: 10px;
+    height: 10px;
+    background-color: #113D87;
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    width: 24px;
+    height: 24px;
+    background-color: #FFFFFF;
+    -webkit-transform: translateY(-21px);
+  }
+}
+@-ms-keyframes bubblingG {
+  0% {
+    width: 10px;
+    height: 10px;
+    background-color: #113D87;
+    -ms-transform: translateY(0);
+  }
+  100% {
+    width: 24px;
+    height: 24px;
+    background-color: #FFFFFF;
+    -ms-transform: translateY(-21px);
+  }
+}
+@-o-keyframes bubblingG {
+  0% {
+    width: 10px;
+    height: 10px;
+    background-color: #113D87;
+    -o-transform: translateY(0);
+  }
+  100% {
+    width: 24px;
+    height: 24px;
+    background-color: #FFFFFF;
+    -o-transform: translateY(-21px);
+  }
+}
+@keyframes bubblingG {
+  0% {
+    width: 10px;
+    height: 10px;
+    background-color: #113D87;
+    transform: translateY(0);
+  }
+  100% {
+    width: 24px;
+    height: 24px;
+    background-color: #FFFFFF;
+    transform: translateY(-21px);
+  }
+}
+.pls {
+  width: 160px;
+  background: #e2eef7;
+  overflow: hidden;
+  border-right: 1px solid #C2D5E3;
+  vertical-align: top;
+}
+.plc {
+  padding: 0 20px;
+  background: #E8F1F8;
+  vertical-align: top;
+}
+.pi {
+  margin-bottom: 10px;
+  padding: 10px 0 30px;
+  height: 16px;
+  border-bottom: 1px dashed #CDCDCD;
+}
+.pi strong a {
+  padding: 2px 6px;
+  border-color: #E8F1F8;
+}
+.pi strong a {
+  float: right;
+  margin-top: -6px;
+  padding: 4px 6px;
+  border: 1px solid #F2FFFF;
+  font-weight: 400;
+}
+.pls .pi {
+  padding-left: 15px;
+}
+.pdbt {
+  float: right;
+  margin: -5px 10px 0 0;
+}
+.authicn {
+  cursor: pointer;
+  width: 16px;
+}
+.pipe {
+  margin: 0 5px;
+  color: #CCC;
+}
+.pct {
+  padding-bottom: 1em;
+}
+.pcb {
+  margin-right: 0;
+}
+.t_fsz {
+  min-height: 100px;
+}
+.pl table {
+  table-layout: fixed;
+  width: 100%;
+}
+.t_f,
+.t_f td {
+  font-size: 14px;
+}
+.po {
+  border-top: 1px dashed #CDCDCD;
+}
+/*.hin {*/
+/*opacity: 0.2;*/
+/*}*/
+.pob {
+  line-height: 36px;
+}
+.cl {
+  zoom: 1;
+}
+.cl:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.pob em a {
+  padding: 5px 10px 5px 25px;
+}
+.fastre {
+  background: url(http://bbs.uestc.edu.cn/template/qshpan/image/fastreply.gif) no-repeat 0 50%;
+}
+.pls .favatar {
+  background: transparent;
+  height: auto;
+  border-width: 0px;
+  overflow: visible;
+}
+.xw1 {
+  font-weight: 700;
+}
+.pls .avatar {
+  margin: 10px 15px;
+}
+#quote {
+  padding-bottom: 5px;
+  border: 1px solid #DADADA;
+  background: #f9f9f9 url(http://bbs.uestc.edu.cn/template/qshpan/image/icon_quote_s.gif) no-repeat 20px 6px !important;
+}
+#quote blockquote {
+  display: inline-block;
+  margin: 0;
+  padding: 0 65px 5px 21px;
+  background: url(http://bbs.uestc.edu.cn/template/qshpan/image/icon_quote_e.gif) no-repeat 100% 100% !important;
+  line-height: 1.6;
+  zoom: 1;
+}
